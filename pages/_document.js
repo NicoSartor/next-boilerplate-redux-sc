@@ -64,7 +64,6 @@ export default class MyDocument extends Document {
 						body * {
 							font-family: 'Libre Franklin', sans-serif;
 						}
-
 						`
 					}
 					}/>

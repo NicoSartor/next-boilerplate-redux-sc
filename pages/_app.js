@@ -24,7 +24,7 @@ class MyApp extends App {
 							</Link>
 						</li>
 						<li>
-							<Link href={`/params`} params={{ id: "some_param" }}>
+							<Link href={`/params/this-is-a-param`}>
 								<a>Params Example2</a>
 							</Link>
 						</li>

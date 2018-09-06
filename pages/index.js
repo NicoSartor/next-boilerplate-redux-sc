@@ -1,6 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import Link from 'next/link';
+import Layout from '../components/Layout/_LayoutIndex';
 
 
 class Index extends React.Component {
@@ -13,9 +14,9 @@ class Index extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<Layout>
 				<h1>This is the index page</h1>
-			</div>
+			</Layout>
 		);
 	}
 }

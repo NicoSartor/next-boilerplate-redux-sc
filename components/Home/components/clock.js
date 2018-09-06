@@ -8,11 +8,11 @@ export default ({ lastUpdate, light }) => {
           display: inline-block;
           color: #82FA58;
           font: 50px menlo, monaco, monospace;
-          background-color: #000;
+          background-color: #999;
         }
 
         .light {
-          background-color: #999;
+          background-color: #000;
         }
       `}</style>
     </div>

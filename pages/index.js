@@ -1,35 +1,23 @@
-import {Bg} from '../styles/index';
+import React from "react";
+import { connect } from "react-redux";
+import Link from 'next/link';
 
-import React from 'react'
-import {connect} from 'react-redux'
-import {startClock, serverRenderClock} from '../store'
-import Examples from '../components/examples'
 
 class Index extends React.Component {
-  static getInitialProps ({ reduxStore, req }) {
-    const isServer = !!req
-    reduxStore.dispatch(serverRenderClock(isServer))
+	static getInitialProps({ reduxStore, req }) {
+		// const isServer = !!req;
+		// reduxStore.dispatch(serverRenderClock(isServer));
 
-    return {}
-  }
+		return {};
+	}
 
-  componentDidMount () {
-    const {dispatch} = this.props
-    this.timer = startClock(dispatch)
-  }
-
-  componentWillUnmount () {
-    clearInterval(this.timer)
-  }
-
-  render () {
-    return (
-		<div>
-      		<Examples />
-			<Bg></Bg>
-		</div>
-    )
-  }
+	render() {
+		return (
+			<div>
+				<h1>This is the index page</h1>
+			</div>
+		);
+	}
 }
 
-export default connect()(Index)
+export default connect()(Index);

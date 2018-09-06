@@ -6,13 +6,14 @@ export default ({ lastUpdate, light }) => {
         div {
           padding: 15px;
           display: inline-block;
-          color: #82FA58;
+          color: #000;
           font: 50px menlo, monaco, monospace;
           background-color: #999;
         }
 
         .light {
-          background-color: #000;
+		  background-color: #000;
+		  color: #82FA58;
         }
       `}</style>
     </div>

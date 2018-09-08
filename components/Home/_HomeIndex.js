@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import Examples from './components/examples';
 import * as actions from './Actions';
+import Layout from '../Layout/_LayoutIndex';
 
 class Home extends React.Component {
 	static getInitialProps({ reduxStore, req }) {
@@ -20,9 +21,9 @@ class Home extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<Layout>
 				<Examples />
-			</div>
+			</Layout>
 		);
 	}
 }

@@ -29,17 +29,7 @@ class Nav extends React.Component {
 						</Link>
 					</li>
 				</ul>
-				<style jsx>{`
-				.container{
-					background: black;
-					width: 220px;
-					height: 100vh;
 
-					@media (max-width: 700px) {
-						width: 100%;
-						height: 60px;
-					}}
-				`}</style>
 			</div>
 		);
 	}

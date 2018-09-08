@@ -14,6 +14,7 @@ export default class MyDocument extends Document {
 			<html>
 				<Head>
 					<title>My page</title>
+					<meta name="viewport" content="width=device-width,initial-scale=1.0"></meta>
 					<link href="https://fonts.googleapis.com/css?family=Libre+Franklin:100,100i,200,200i,300,300i,400" rel="stylesheet"></link>
 					<style dangerouslySetInnerHTML={
 						{__html:

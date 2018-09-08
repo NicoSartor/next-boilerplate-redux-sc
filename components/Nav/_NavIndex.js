@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
-import {Link} from '../../routes';
+import { Link } from "../../routes";
 
-import { Container } from './Styles';
+import { Container } from "./Styles";
 
 class Nav extends React.Component {
 	static getInitialProps({ reduxStore, req }) {
@@ -10,26 +10,37 @@ class Nav extends React.Component {
 	}
 	render() {
 		return (
-			<Container>
+			<div className="container">
 				<p>Wrapper</p>
-					<ul>
-						<li>
-							<Link href="/">
-								<a href="">Index</a>
-							</Link>
-						</li>
-						<li>
-							<Link href="/home">
-								<a href="">Home(Clock)</a>
-							</Link>
-						</li>
-						<li>
-							<Link href={`/params/this-is-a-param`}>
-								<a>Params Example2</a>
-							</Link>
-						</li>
-					</ul>
-			</Container>
+				<ul>
+					<li>
+						<Link href="/">
+							<a href="">Index</a>
+						</Link>
+					</li>
+					<li>
+						<Link href="/home">
+							<a href="">Home(Clock)</a>
+						</Link>
+					</li>
+					<li>
+						<Link href={`/params/this-is-a-param`}>
+							<a>Params Example2</a>
+						</Link>
+					</li>
+				</ul>
+				<style jsx>{`
+				.container{
+					background: black;
+					width: 220px;
+					height: 100vh;
+
+					@media (max-width: 700px) {
+						width: 100%;
+						height: 60px;
+					}}
+				`}</style>
+			</div>
 		);
 	}
 }
